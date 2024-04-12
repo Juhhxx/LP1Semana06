@@ -15,5 +15,12 @@ namespace ColorSpheres
             this._blue = _blue;
             this._alpha= _alpha;
         }
+        Color(byte _red, byte _green, byte _blue)
+        {
+            this._red = _red;
+            this._green = _green;
+            this._blue = _blue;
+            this._alpha= 255;
+        }
     }
 }
