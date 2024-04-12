@@ -22,5 +22,21 @@ namespace ColorSpheres
             this._blue = _blue;
             this._alpha= 255;
         }
+        public byte GetRed()
+        {
+            return _red;
+        }
+        public byte GetGreen()
+        {
+            return _green;
+        }
+        public byte GetBlue()
+        {
+            return _blue;
+        }
+        public byte GetGray()
+        {
+            return (byte)((_red + _green + _blue)/3);
+        }
     }
 }
