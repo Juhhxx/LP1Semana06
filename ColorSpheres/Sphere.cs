@@ -4,7 +4,7 @@ namespace ColorSpheres
 {
     public class Sphere
     {
-        private Color _color;
+        private readonly Color _color;
         private int _radius;
         private int _throw;
         public Sphere(Color _color, int _radius)
@@ -23,7 +23,10 @@ namespace ColorSpheres
         }
         public void Throw()
         {
-            _throw += 1;
+            if (_radius > 0)
+            {
+                _throw += 1;
+            }
         }
         public int GetTimesThrown()
         {
