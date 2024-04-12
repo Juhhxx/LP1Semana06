@@ -10,44 +10,24 @@ namespace BetterColorSpheres
     {
         public Color Color { get; }
         public int Radius { get; private set; }
-        private int _throw;
+        public int Thrown { get; private set; }
         
         public Sphere(Color color, int radius)
         {
             Color = color;
             Radius = radius;
-            _throw = 0;
-        }
-        public int Throw
-        {
-            get => _throw;
-
-            private set
-            {
-                if (Radius > 0)
-                {
-                    _throw += 1;
-                }
-            }
-        }
-        public Color GetColor()
-        {
-            return _color;
+            Thrown = 0;
         }
         public void Pop()
         {
-            _radius = 0;
+            Radius = 0;
         }
         public void Throw()
         {
-            if (_radius > 0)
+            if (Radius > 0)
             {
-                _throw += 1;
+                Thrown += 1;
             }
-        }
-        public int GetTimesThrown()
-        {
-            return _throw;
         }
     }
 }
