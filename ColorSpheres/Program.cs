@@ -31,6 +31,18 @@ namespace ColorSpheres
             Console.WriteLine($"Ball1 throws: {ball1.GetTimesThrown()}");
             Console.WriteLine($"Ball2 throws: {ball2.GetTimesThrown()}");
 
+            Sphere[] balls = new Sphere[2] {ball1,ball2};
+
+            for (int i = 0; i < 2; i ++)
+            {
+                byte r = balls[i].GetColor().GetRed();
+                byte g = balls[i].GetColor().GetGreen();
+                byte b = balls[i].GetColor().GetBlue();
+                byte a = balls[i].GetColor().GetAlpha();
+
+                Console.WriteLine($"Ball{i + 1} color: ({r}, {g}, {b}, {a})");
+            }
+
         }
     }
 }
