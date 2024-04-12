@@ -22,7 +22,7 @@ namespace BetterColorSpheres
             Blue = blue;
             Alpha = 255;
         }
-        public byte Gray
+        public byte Grayscale
         {
             get => (byte)((Red + Green + Blue)/3);
         }
