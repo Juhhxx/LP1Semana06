@@ -34,6 +34,10 @@ namespace ColorSpheres
         {
             return _blue;
         }
+        public byte GetAlpha()
+        {
+            return _alpha;
+        }
         public byte GetGray()
         {
             return (byte)((_red + _green + _blue)/3);
