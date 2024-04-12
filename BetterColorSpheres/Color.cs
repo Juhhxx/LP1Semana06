@@ -22,9 +22,9 @@ namespace BetterColorSpheres
             Blue = blue;
             Alpha = 255;
         }
-        public byte GetGray()
+        public byte Gray
         {
-            return (byte)((Red + Green + Blue)/3);
+            get => (byte)((Red + Green + Blue)/3);
         }
     }
 }

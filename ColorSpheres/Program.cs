@@ -39,8 +39,10 @@ namespace ColorSpheres
                 byte g = balls[i].GetColor().GetGreen();
                 byte b = balls[i].GetColor().GetBlue();
                 byte a = balls[i].GetColor().GetAlpha();
+                byte gr = balls[i].GetColor().GetGray();
 
                 Console.WriteLine($"Ball{i + 1} color: ({r}, {g}, {b}, {a})");
+                Console.WriteLine($"The Gray Scale level is: {gr}");
             }
 
         }
