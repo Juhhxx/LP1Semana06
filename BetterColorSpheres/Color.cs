@@ -4,23 +4,23 @@ namespace BetterColorSpheres
 {
     public class Color
     {
-        private readonly byte _red;
-        private readonly byte _green;
-        private readonly byte _blue;
-        private readonly byte _alpha;
-        public Color(byte _red, byte _green, byte _blue, byte _alpha)
+        public byte Red { get; }
+        public byte Green { get; }
+        public byte Blue { get; }
+        public byte Alpha { get; }
+        public Color(byte red, byte green, byte blue, byte alpha)
         {
-            this._red = _red;
-            this._green = _green;
-            this._blue = _blue;
-            this._alpha= _alpha;
+            Red = red;
+            Green = green;
+            Blue = blue;
+            Alpha = alpha;
         }
-        public Color(byte _red, byte _green, byte _blue)
+        public Color(byte red, byte green, byte blue)
         {
-            this._red = _red;
-            this._green = _green;
-            this._blue = _blue;
-            this._alpha= 255;
+            Red = red;
+            Green = green;
+            Blue = blue;
+            Alpha = 255;
         }
         public byte GetRed()
         {
