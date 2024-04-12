@@ -15,7 +15,7 @@ namespace PlayerStats
             _wonGames = 0;
             _highScore = 0;
         }
-        public float HighScores
+        public float HighScore
         {
             get => _highScore;
 
@@ -33,7 +33,7 @@ namespace PlayerStats
             {
                 if (_wonGames > 0)
                 {
-                    return (_wonGames/_playedGames); 
+                    return (_wonGames/(float)_playedGames); 
                 }
                 else 
                 {
@@ -49,7 +49,7 @@ namespace PlayerStats
             if (win)
             {
                 _wonGames += 1;
-                HighScores = score;
+                HighScore = score;
             }
         }
     }
