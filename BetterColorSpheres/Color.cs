@@ -22,25 +22,9 @@ namespace BetterColorSpheres
             Blue = blue;
             Alpha = 255;
         }
-        public byte GetRed()
-        {
-            return _red;
-        }
-        public byte GetGreen()
-        {
-            return _green;
-        }
-        public byte GetBlue()
-        {
-            return _blue;
-        }
-        public byte GetAlpha()
-        {
-            return _alpha;
-        }
         public byte GetGray()
         {
-            return (byte)((_red + _green + _blue)/3);
+            return (byte)((Red + Green + Blue)/3);
         }
     }
 }
