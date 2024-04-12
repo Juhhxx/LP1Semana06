@@ -13,6 +13,10 @@ namespace ColorSpheres
             this._radius = _radius;
             _throw = 0;
         }
+        public Color GetColor()
+        {
+            return _color;
+        }
         public void Pop()
         {
             _radius = 0;
