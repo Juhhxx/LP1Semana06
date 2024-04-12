@@ -1,20 +1,34 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 
 namespace BetterColorSpheres
 {
     public class Sphere
     {
-        private readonly Color _color;
-        private int _radius;
+        public Color Color { get; }
+        public int Radius { get; private set; }
         private int _throw;
-        public Sphere(Color _color, int _radius)
+        
+        public Sphere(Color color, int radius)
         {
-            this._color = _color;
-            this._radius = _radius;
+            Color = color;
+            Radius = radius;
             _throw = 0;
+        }
+        public int Throw
+        {
+            get => _throw;
+
+            private set
+            {
+                if (Radius > 0)
+                {
+                    _throw += 1;
+                }
+            }
         }
         public Color GetColor()
         {
