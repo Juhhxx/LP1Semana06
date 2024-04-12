@@ -13,5 +13,17 @@ namespace ColorSpheres
             this._radius = _radius;
             _throw = 0;
         }
+        public void Pop()
+        {
+            _radius = 0;
+        }
+        public void Throw()
+        {
+            _throw += 1;
+        }
+        public int GetTimesThrown()
+        {
+            return _throw;
+        }
     }
 }
