@@ -39,8 +39,10 @@ namespace BetterColorSpheres
                 byte g = balls[i].Color.Green;
                 byte b = balls[i].Color.Blue;
                 byte a = balls[i].Color.Alpha;
+                byte gr = balls[i].Color.Gray;
 
                 Console.WriteLine($"Ball{i + 1} color: ({r}, {g}, {b}, {a})");
+                Console.WriteLine($"The Gray Scale level is: {gr}");
             }
 
         }
